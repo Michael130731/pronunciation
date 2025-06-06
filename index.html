@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>study pronunciaion</title>
+    </head>
+    <body>
+        <div class="flex flex-col items-center justify-center min-h-screen bg-white p-6 space-y-6">
+  <h1 class="text-3xl font-bold">언어 발음 변환기</h1>
 
+  <!-- 언어 및 옵션 선택 -->
+  <div class="flex space-x-4">
+    <select class="p-2 border rounded">
+      <option>영어</option>
+      <option>한국어</option>
+      <option>중국어</option>
+    </select>
+
+    <select class="p-2 border rounded">
+      <option>IPA</option>
+      <option>한글</option>
+      <option>중국어 발음</option>
+    </select>
+
+    <select class="p-2 border rounded">
+      <option>한국어</option>
+      <option>중국어</option>
+      <option>일본어</option>
+    </select>
+  </div>
+
+  <!-- 입력 및 출력 박스 -->
+  <div class="flex w-full max-w-4xl space-x-6">
+    <textarea class="w-1/2 h-40 p-4 border rounded resize-none" placeholder="입력 텍스트 입력"></textarea>
+    <textarea class="w-1/2 h-40 p-4 border rounded bg-gray-100 resize-none" placeholder="출력 텍스트" readonly></textarea>
+  </div>
+
+  <!-- 변환 및 발음기호 표 -->
+  <div class="flex space-x-4">
+    <button class="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">변환</button>
+    <button class="px-6 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400">발음기호 표 보기</button>
+  </div>
+</div>
+    </body>
+</html>
